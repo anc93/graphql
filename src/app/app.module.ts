@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ListComponent } from './components/list/list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './modules/home/home.component';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ApolloModule,
     HttpClientModule,
     HttpLinkModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HomeModule
 
   ],
   providers: [],
